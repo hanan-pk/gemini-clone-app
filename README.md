@@ -3,6 +3,12 @@
 A modern, clean, and interactive Gemini-style chat interface built with **Next.js 15 App Router**, **Zustand**, **React Hook Form + Zod**, and **Tailwind CSS**. Supports image-based prompts, AI typing simulation, OTP login, message pagination, and infinite scroll.
 
 ---
+## Screenshots
+<img width="2558" height="1359" alt="image" src="https://github.com/user-attachments/assets/a46b8828-ac96-461c-9b57-de137a0a5e9b" />
+<img width="2559" height="1360" alt="image" src="https://github.com/user-attachments/assets/ba56eff8-12cf-4315-bf58-781715dd8b78" />
+<img width="2445" height="897" alt="image" src="https://github.com/user-attachments/assets/4550e47d-32c0-47ba-acd7-18b8a44529cc" />
+
+
 
 ## 🔗 Live Demo
 
