@@ -12,55 +12,57 @@ A modern, clean, and interactive Gemini-style chat interface built with **Next.j
 
 ## 🔗 Live Demo
 
-👉 [View Live](https://your-live-url.vercel.app)
+👉 [View Live](https://hn-gemini-clone.netlify.app/login)
 
 ---
 
 ## 📁 Project Structure
-
 .
 ├── app/
-│ ├── page.jsx # Main homepage
-│ └── chat/[id]/page.tsx # Chatroom per session
-│ └── login/  
-│ └── page.jsx
-│ └── search/  
-│ └── page.jsx
+│   ├── page.jsx                    # Main homepage
+│   ├── chat/
+│   │   └── [id]/
+│   │       └── page.tsx            # Chatroom per session
+│   ├── login/
+│   │   └── page.jsx
+│   └── search/
+│       └── page.jsx
 │
 ├── components/
-│ ├── CharWindowHeader.jsx
-│ ├── ChatWindowSideBar.jsx
-│ ├── CountrySelector.jsx
-│ ├── ThemeToggle.jsx
-│ ├── OtpForm.jsx
-│ ├── PhoneForm.jsx
-│ ├── GeminiIcon.jsx
-│ ├── GeminiInputBar.jsx
-│ ├── Greetings.jsx
-│ └── ui/ # ShadCN components used
+│   ├── CharWindowHeader.jsx
+│   ├── ChatWindowSideBar.jsx
+│   ├── CountrySelector.jsx
+│   ├── ThemeToggle.jsx
+│   ├── OtpForm.jsx
+│   ├── PhoneForm.jsx
+│   ├── GeminiIcon.jsx
+│   ├── GeminiInputBar.jsx
+│   ├── Greetings.jsx
+│   └── ui/                        # ShadCN components used
 │
 ├── hooks/
-│ └── useMessageHandler.js # Handles message input, image upload, and typing
-│ └── useTheme.js # Handling user theme - Dark | Light
+│   ├── useMessageHandler.js        # Handles message input, image upload, and typing
+│   └── useTheme.js                 # Handling user theme - Dark | Light
 │
 ├── store/
-│ └── useChatStore.js # Zustand state for chats
-│ └── useSideBarStore.js # Zustand state for sidebar
+│   ├── useChatStore.js             # Zustand state for chats
+│   └── useSideBarStore.js          # Zustand state for sidebar
 │
 ├── utils/
-│ └── utils.js # global functions
-│ └── fakeGeminiReplyUtils.js # Generating fake response
-│ └── useDiviceTypeUtils.js # Getting user screen size
-│ └── dateFormatUtils.js # Formating dates
+│   ├── utils.js                    # Global functions
+│   ├── fakeGeminiReplyUtils.js     # Generating fake response
+│   ├── useDiviceTypeUtils.js       # Getting user screen size
+│   └── dateFormatUtils.js          # Formatting dates
 │
 ├── lib/
-│ └── validation.js # Zod schemas for form validation
+│   └── validation.js               # Zod schemas for form validation
 │
 ├── public/
-│ └── images/
+│   └── images/
 │
 └── styles/
-└── globals.css
+    └── globals.css
+
 
 ## ⚙️ Setup & Run Instructions
 
