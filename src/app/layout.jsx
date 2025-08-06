@@ -5,7 +5,7 @@ import ChatWindowSidebar from "../components/ChatWindowSidebar";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { usePathname } from "next/navigation";
-import { useDeviceType } from "../utils/use DeviceTypeUtils";
+import { useDeviceType } from "../utils/useDeviceTypeUtils";
 import Head from "next/head";
 
 export default function RootLayout({ children }) {
