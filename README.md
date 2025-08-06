@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Gemini Chat App Clone
 
-## Getting Started
+A modern, clean, and interactive Gemini-style chat interface built with **Next.js 15 App Router**, **Zustand**, **React Hook Form + Zod**, and **Tailwind CSS**. Supports image-based prompts, AI typing simulation, OTP login, message pagination, and infinite scroll.
 
-First, run the development server:
+---
+
+## 🔗 Live Demo
+
+👉 [View Live](https://your-live-url.vercel.app)
+
+---
+
+## 📁 Project Structure
+
+.
+├── app/
+│ ├── page.jsx # Main homepage
+│ └── chat/[id]/page.tsx # Chatroom per session
+│ └── login/  
+│ └── page.jsx
+│ └── search/  
+│ └── page.jsx
+│
+├── components/
+│ ├── CharWindowHeader.jsx
+│ ├── ChatWindowSideBar.jsx
+│ ├── CountrySelector.jsx
+│ ├── ThemeToggle.jsx
+│ ├── OtpForm.jsx
+│ ├── PhoneForm.jsx
+│ ├── GeminiIcon.jsx
+│ ├── GeminiInputBar.jsx
+│ ├── Greetings.jsx
+│ └── ui/ # ShadCN components used
+│
+├── hooks/
+│ └── useMessageHandler.js # Handles message input, image upload, and typing
+│ └── useTheme.js # Handling user theme - Dark | Light
+│
+├── store/
+│ └── useChatStore.js # Zustand state for chats
+│ └── useSideBarStore.js # Zustand state for sidebar
+│
+├── utils/
+│ └── utils.js # global functions
+│ └── fakeGeminiReplyUtils.js # Generating fake response
+│ └── useDiviceTypeUtils.js # Getting user screen size
+│ └── dateFormatUtils.js # Formating dates
+│
+├── lib/
+│ └── validation.js # Zod schemas for form validation
+│
+├── public/
+│ └── images/
+│
+└── styles/
+└── globals.css
+
+## ⚙️ Setup & Run Instructions
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/gemini-chat-clone.git
+cd gemini-chat-clone
+
+npm install
+# or
+yarn install
+
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
